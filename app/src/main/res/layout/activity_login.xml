@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivLogLogo"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/pngwing" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/ivLogLogo"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                >
+
+
+
+                <TextView
+                    android:id="@+id/ivSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/rubik_regular"
+                    android:textSize="@dimen/_20sdp"
+                    android:visibility="gone"
+                    android:layout_marginBottom="15dp"
+                    android:contentDescription="TODO"
+                    android:text="Log In" />
+
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/atvEmailLog"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="@dimen/_5sdp"
+
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/test_view_bg"
+                    android:drawableLeft="@drawable/icon_person"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/icon_person"
+                    android:hint="Email"
+
+                    android:drawableTint="#000"
+
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:textColor="#000"
+                    android:textColorHint="#717171"
+                    android:textSize="15sp" />
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/atvPasswordLog"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="@dimen/_5sdp"
+
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/test_view_bg"
+                    android:drawableLeft="@drawable/icon_password"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/icon_password"
+                    android:hint="Password"
+                    android:textColor="#000"
+
+                    android:drawableTint="#000"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:textColorHint="#717171"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/tvForgotPass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:visibility="invisible"
+                    android:layout_marginBottom="3dp"
+                    android:text="@string/forgot_password"
+                    android:textColorHint="#000"
+                    />
+
+
+                <Button
+                    android:id="@+id/btnSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btnsignup_gradient"
+                    android:text="Login"
+                    android:textColor="#FFFFFF" />
+
+
+
+
+
+                <ImageView
+                    android:id="@+id/ivFacebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="Social site button"
+                    android:src="@drawable/btn_twitter" />
+
+
+                <TextView
+                    android:id="@+id/tvSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_15sdp"
+
+                    android:text="@string/signup_redirect"
+                    android:textColor="@color/tab_color" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

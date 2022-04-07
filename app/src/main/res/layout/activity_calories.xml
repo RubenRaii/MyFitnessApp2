@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="9dp"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_25sdp"
+            android:text="Calculate Calories"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/age_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_below="@id/title2"
+            android:text="Age" />
+
+        <EditText
+            android:id="@+id/edit_age"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+
+            android:layout_below="@id/title2"
+            android:layout_toEndOf="@id/age_txt"
+            android:gravity="center"
+            android:hint="@string/age"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/height_txt"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_below="@id/age_txt"
+            android:text="Height in cm" />
+
+        <EditText
+            android:id="@+id/edit_height"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:layout_below="@id/edit_age"
+            android:layout_toEndOf="@id/age_txt"
+            android:gravity="center"
+            android:hint="@string/height"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/weight_txt"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/height_txt"
+                android:text="Weight in kg"
+                android:textAlignment="center"
+                android:textStyle="bold"
+
+                tools:layout_editor_absoluteX="121dp"
+                tools:layout_editor_absoluteY="159dp" />
+            <EditText
+                android:id="@+id/edit_weight"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="35dp"
+                android:layout_below="@id/edit_height"
+                android:layout_toEndOf="@id/age_txt"
+                android:gravity="center"
+                android:hint="@string/weight"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:id="@+id/activity_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:text="Daily Activity"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15sdp"
+
+            android:textColor="@color/colorAccent" />
+
+        <belka.us.androidtoggleswitch.widgets.ToggleSwitch
+            android:id="@+id/activity_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_txt"
+            android:layout_centerInParent="true"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            app:activeBgColor="@color/colorAccent"
+            app:cornerRadius="0dp"
+            app:inactiveBgColor="@color/lightGrey"
+            app:inactiveTextColor="@color/white"
+            app:separatorColor="@color/white"
+            app:textToggleCenter="Active"
+            app:textToggleLeft="Sedentary"
+            app:textToggleRight="Very Active"
+            app:toggleWidth="@dimen/_100sdp" />
+
+        <TextView
+            android:id="@+id/activity_txt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_below="@id/activity_switch"
+            android:layout_alignStart="@id/activity_switch"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15sdp"
+            android:text="Days"
+            android:textColor="@color/colorAccent" />
+
+        <com.xw.repo.BubbleSeekBar
+            android:id="@+id/seekDays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_txt3"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="6dp"
+            android:paddingEnd="32dp"
+            android:paddingStart="32dp"
+            app:bsb_anim_duration="200"
+            app:bsb_bubble_color="@color/white"
+            app:bsb_bubble_text_color="@color/colorPrimaryDark"
+            app:bsb_max="7"
+            app:bsb_min="0"
+            app:bsb_progress="0"
+            app:bsb_second_track_color="@color/colorAccent"
+            app:bsb_section_count="7"
+            app:bsb_section_text_position="bottom_sides"
+            app:bsb_show_section_text="true"
+            app:bsb_show_thumb_text="true"
+            app:bsb_track_color="@color/lightGrey" />
+
+        <TextView
+            android:id="@+id/activity_txt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekDays"
+            android:layout_alignStart="@id/activity_switch"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="Exercise Intensity"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
+
+        <belka.us.androidtoggleswitch.widgets.ToggleSwitch
+            android:id="@+id/activity_switch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below="@id/activity_txt2"
+            android:layout_centerInParent="true"
+            android:textSize="14sp"
+            app:activeBgColor="@color/colorAccent"
+            app:cornerRadius="0dp"
+            app:inactiveBgColor="@color/lightGrey"
+            app:inactiveTextColor="@color/white"
+            app:separatorColor="@color/white"
+            app:textToggleCenter="Moderate"
+            app:textToggleLeft="Light"
+            app:textToggleRight="Intense"
+            app:toggleWidth="@dimen/_100sdp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+
+            android:layout_weight="1"
+            android:elevation="8dp"
+            android:background="#fff"
+
+            android:text="@string/calculate"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+
+            android:background="#fff"
+            android:elevation="8dp"
+            android:text="@string/reset"
+            android:textColor="@color/colorAccent" />
+
+
+    </LinearLayout>
+
+    <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+        android:id="@+id/bnve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

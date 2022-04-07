@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    >
+
+
+    <ImageView
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:src="@drawable/back_news"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:id="@+id/top">
+
+            <View
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="1dp"
+                android:id="@+id/line"
+                android:layout_centerVertical="true"
+                android:background="#B3B3B3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_toEndOf="@+id/line"
+                android:fontFamily="@font/rubik_medium"
+                android:text="Account"
+                android:textColor="#000"
+                android:textSize="@dimen/_25sdp" />
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignParentRight="true"
+                app:riv_oval="true"
+                android:src="@color/bg_screen1"
+                />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/editBtn"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_baseline_edit_24"
+                app:riv_oval="true" />
+
+
+        </RelativeLayout>
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/original"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_27sdp"
+
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:orientation="horizontal">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        app:riv_oval="true"
+
+                        android:scaleType="centerCrop"
+                        android:id="@+id/image"
+                        app:tint="#151515"
+
+                        android:src="@drawable/prfile_pic"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="bottom"
+                        android:padding="@dimen/_6sdp"
+
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_baseline_edit_24"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_27sdp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_19sdp"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/rubik_medium"
+                        android:id="@+id/tvName"
+                        android:text=" Name"/>
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center_vertical"
+                        android:padding="@dimen/_4sdp"
+                        android:id="@+id/editName"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_baseline_edit_24"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_27sdp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="#656565"
+                        android:maxLength="40"
+                        android:id="@+id/tvBio"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/rubik_regular"
+                        android:text="Fitness"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center_vertical"
+                        android:padding="@dimen/_4sdp"
+                        android:id="@+id/bioEdit"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_baseline_edit_24"/>
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    >
+
+                    <View
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="1dp"
+                        android:id="@+id/line2"
+                        android:layout_centerVertical="true"
+                        android:background="#B3B3B3"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_toEndOf="@+id/line2"
+                        android:fontFamily="@font/rubik_medium"
+                        android:text="Settings"
+                        android:textColor="#000"
+                        android:textSize="@dimen/_12sdp" />
+
+
+
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_27sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_4sdp"
+                    android:visibility="gone"
+                    android:id="@+id/notification"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    app:cardElevation="@dimen/_10sdp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_margin="@dimen/_10sdp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/rubik_medium"
+                                android:textSize="@dimen/_11sdp"
+                                android:textColor="#000"
+                                android:text="Notifications"/>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/rubik_regular"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:text="Turn notifications On or Off"/>
+
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="center"
+                            android:checked="true"
+                            android:id="@+id/swtich_noti"
+                            android:theme="@style/SCBSwitch"
+                            />
+
+
+                    </RelativeLayout>
+
+
+
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_27sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_4sdp"
+                    android:id="@+id/age"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    app:cardElevation="@dimen/_10sdp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/_10sdp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik_medium"
+                            android:textSize="@dimen/_11sdp"
+                            android:textColor="#000"
+                            android:text="Age"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik_regular"
+                            android:id="@+id/tvAge"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="23"/>
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_27sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_4sdp"
+                    android:id="@+id/WandH"
+
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    app:cardElevation="@dimen/_10sdp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/_10sdp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik_medium"
+                            android:textSize="@dimen/_11sdp"
+                            android:textColor="#000"
+                            android:text="Weight &amp; Height"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik_regular"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:id="@+id/tvWandH"
+                            android:text="Weight 70kg \n\n Height: 5.11 feet"/>
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_27sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_4sdp"
+                    android:id="@+id/logout"
+
+                    android:layout_marginBottom="@dimen/_40sdp"
+                    app:cardElevation="@dimen/_10sdp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/_10sdp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik_medium"
+                            android:textSize="@dimen/_11sdp"
+                            android:textColor="#000"
+                            android:text="Logout"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik_regular"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="Tap to logout from app"/>
+                    </LinearLayout>
+
+
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+
+    <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+        android:id="@+id/bnve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        />
+
+</FrameLayout>

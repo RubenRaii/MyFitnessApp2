@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF5722</color>
+    <color name="teal_700">#FF9800</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lightGrey">#4E5159</color>
+
+    <color name="yellow">#FFE66E</color>
+    <color name="lightGreen">#a0ef9a</color>
+    <color name="pink">#ffaedf</color>
+    <color name="lightPurple">#d7afff</color>
+    <color name="skyblue">#9edfff</color>
+    <color name="gray">#e0e0e0</color>
+    <color name="greenlight">#96D162</color>
+    <color name="notgreen">#EA80FC</color>
+
+    <color name="bluez">#29B6F6</color>
+    <color name="greenz">#9CCC65</color>
+    <color name="red">#ef5350</color>
+    <color name="colorGrey">#3b3e47</color>
+
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#2196F3</color>
+
+    <color name="tab_color">#2196F3</color>
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="blue2">#4f6cff</color>
+
+    <color name="blue">#4f6cff</color>
+
+    <color name="textColor">#000</color>
+
+    <color name="materialLightGreen">#99FF99</color>
+    <color name="darkGreen">#009900</color>
+    <color name="materialLightBlue">#3399FF</color>
+    <color name="percentPositiveGreen">#434343</color>
+
+    <color name="materialLightPurple">#B266FF</color>
+
+    <color name="materialLightRed">#FA5858</color>
+    <color name="darkRed">#FF1111</color>
+    <color name="percentNegativeRed">#FF434343</color>
+
+    <color name="progressBarColor">#4dd0e1</color>
+
+
+    <color name="lightGray">#d3d3d3</color>
+    <color name="lightGray2">#373737</color>
+
+
+
+
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#14a895</color>
+    <color name="bg_screen2">#14a895</color>
+    <color name="bg_screen3">#14a895</color>
+    <color name="bg_screen4">#14a895</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#14a895</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#14a895</color>
+    <color name="dot_dark_screen4">#14a895</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#77bfbf</color>
+    <color name="dot_light_screen2">#77bfbf</color>
+    <color name="dot_light_screen3">#77bfbf</color>
+    <color name="dot_light_screen4">#77bfbf</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+</resources>
